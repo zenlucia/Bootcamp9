@@ -1,0 +1,21 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    background-image:url("trees.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+p {
+    font-size: 25px;
+    font-family: font-family: 'Roboto', sans-serif;;
+}
+
+h2 {
+    color: rgb(13, 99, 13);
+}
