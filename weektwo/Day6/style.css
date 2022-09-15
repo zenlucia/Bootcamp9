@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+
+.title {
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+}
+
+.banner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    line-height: 25px;
+    size: 450px;
+}
+li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    text-align: center;;
+}
+
+.flex-container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 80%;
+}
+
+.flex-left {
+    width:350px;
+    height:auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 40%;
+    float: left;
+    overflow-y: visible;
+}
+
+.flex-right {
+    width:300px;
+    height:auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 40%;
+    float: right;
+    overflow-y: visible;
+}
+
+#testimonial {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;;
+}
