@@ -1,0 +1,102 @@
+/*****************************
+***CSS created by Zhuo Chen***
+*****************************/
+
+/* index.html page*/
+.navbar {
+    background-size: cover;
+}
+.navbar-photo {
+    width: 100%;
+    overflow: auto;
+}
+img {
+    background-size: cover;
+    width: 100%;
+}
+/*color for headings*/
+h1,h2 {
+    color: #ea398b;
+    padding: 10px;
+}
+
+body {
+    background-color: #a2d2ff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.outer {
+    height: 90%;
+    width: 33%;
+}
+
+
+/*CSS for form.html*/
+
+label {
+    font-size: 20px;
+}
+.row {
+    align-items:center;
+}
+/*content for owner's info*/
+.owner {
+    display: inline-block;
+    line-height: 1.5;
+    margin-left:10px;
+    margin-right:10px;
+    width: 60%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+/*content about pets*/
+.pet {
+    display: inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: #f3f3f3;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(86, 86, 86);
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.btn,.btn-primary {
+    padding: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: #ed7db1;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(86, 86, 86);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    line-height: 2;
+    width:40%;
+}
+/*medical issues*/
+.medical {
+    display: block;
+    margin: 20px auto;
+
+}
