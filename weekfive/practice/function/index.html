@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use addEventListener to reveal button function </title>
+    <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    .hidden-content{
+        display: none;}
+    .hidden-content.reveal-btn{
+        display: block;
+    }    
+    </style>
+</head>
+<body>
+    <h1>Event Listener</h1>
+    <div class="container">
+        <button class="reveal-btn">Reveal More</button>
+        <p class="hidden-content">aaaaaaaaaaaaaaaAAAAAAAA!</p>
+    </div>
+    <script>
+        //reveal event
+        const revealBtn=document.querySelector(".reveal-btn");
+        const hiddenContent=document.querySelector(".hidden-content");
+        function revealContent(){
+            if (hiddenContent.classList.contains("reveal-btn")){
+                hiddenContent.classList.remove("reveal-btn")
+            } else {hiddenContent.classList.add("reveal-btn")}
+        }
+        //addEventListener
+        revealBtn.addEventListener("click", revealContent);
+    </script>
+</body>
+</html>
