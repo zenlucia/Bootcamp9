@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+    </div>
+    
+      <div class="fCard">
+        <img src="./images/card-logo.svg" class="logo">
+        <h4 id="cardNumber"></h4>
+        <h5 id="outputName"></h5>
+        <h5 id="expiryDate"></h5>
+      </div>
+      <div class="bCard">
+        <text id="cvcNumber"></text>
+      </div>
+
+    
+    <div class="right" id="right"></div>
+     <form id="form">
+      <label for="CardHolderName" id="CardHolderName" >Cardholder Name</label>
+      <br>
+      <input type="text" id="name" placeholder="e.g. Jane Appleseed" required>
+      <br>
+      <label for="CardNumber" id="CardNumber">Card Number</label>
+      <br>
+      <input type="number" id="CardNumber" placeholder="e.g. 1234 5678 9123 0000" required>
+      <br>
+      <label for="expirym" id="expiryDates" >expiry date</label>
+      <label for="cvc" id="cvcs">cvc</label>
+      <br>
+      <input type="number" id="expirym" placeholder="MM" max="12" min="1" required>
+      <h5>/</h5>
+      <input type="number" id="expiryy" placeholder="YY" max="99" min="22" required>
+      <input maxlength="3" minlength="3" id="cvcNum" type="number" placeholder="e.g. 123" required>
+      <br>
+      <button type="button" id="submit">Confirm</button> 
+    </form>
+  
+</body>
+</html>

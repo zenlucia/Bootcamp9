@@ -1,0 +1,236 @@
+/*## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+- Red (input errors): hsl(0, 100%, 66%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+- Weights: 500
+*/
+*:required{
+    background-color: rgb(211, 210, 204);
+}
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;  
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 6% 6% 6% 5% 10% 50%;
+    grid-template-rows: 25% 25% 5% 25% 25%;
+    height: 100%;
+  }
+  
+  .left {
+    background-image: url("./images/bg-main-desktop.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1/1/6/4;
+    
+  }
+
+  .fCard {
+    background-image: url("./images/bg-card-front.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 2/2/3/5;
+    border-radius: 3%;
+    letter-spacing: 0.1em;
+    
+  }
+  .logo {
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+  }
+  #cardNumber {
+    width: 100%;
+    height: 15%;
+    color: white;
+    padding-left: 5%;
+    font-size: 14px;
+  }
+
+  #outputName {
+    width: 45%;
+    height: 10%;
+    margin: 0.1%;
+    float: left;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 8px;
+  }
+
+   #expiryDate{
+    width: 25%;
+    height: 10%;
+    margin: 0.1%;
+    float: right;
+    color: white;
+    font-size: 8px;
+   }
+
+  .bCard {
+    background-image: url("./images/bg-card-back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 4/3/5/6;
+    border-radius: 3%;
+    font-size: 11px;
+  }
+  .right {
+    grid-area: 1/5/5/6;
+  }
+
+  form {
+    padding-top: 30px;
+    grid-area: 2/7/5/9;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+  }
+
+  h5 {
+    display: inline-flex;
+    width: 2%;
+  }
+
+  #name,#CardNumber,#expirym,#expiryy,#cvcNum {
+    border: 1.5px solid hsl(270, 3%, 87%);
+    border-radius: 1px;
+    background-color: white;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-left: 2px;
+  }
+  #name,#CardNumber {
+    width: 11rem;
+  }
+  #cardNumber {
+    margin: left;
+  }
+  #expiryDates #cvc{
+    display: inline-flex;
+  }
+  #cvcs {
+    margin-left:8%;
+  }
+  #cvcNumber {
+    float: right;
+    align-items: center;
+    margin-top: 3.6rem;
+    color: white;
+    width: 30%;
+    height: 50%;
+    z-index: 1;
+  }
+
+  #expirym {
+    display: inline-flex;
+    width: 2rem;
+  }
+
+  #expiryy {
+    display: inline-flex;
+    width: 2rem;
+  }
+
+  #cvcNum {
+    width: 4.5rem;
+  }
+
+  #submit {
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+    width: 11rem;
+    border-radius: 2px;
+  }
+
+  #thankyouCard {
+    grid-area: 4/7/7/7;
+  }
+
+  #complete {
+    height: 15%;
+    margin-left: 12%;
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+  }
+
+  .completeButton {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 2px 10px;
+    width: 11rem;
+    border-radius: 2px;
+  }
+
+  .right {
+      margin-left: 30%;
+      display:flex;
+      flex-direction: column;
+    }
+  @media only screen and (max-width: 375px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    .fCard{
+      position: relative;
+      top: 10%;
+      width: 70%;
+      height: 18%;
+      z-index: 1;
+
+    }
+    .bCard{
+  
+      position: absolute;
+      top: 0;
+      width: 70%;
+      height: 18%;
+    }
+
+    .right{
+      position: relative;
+      top: 25%;
+    }
+
+  }
