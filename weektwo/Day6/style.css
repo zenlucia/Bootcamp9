@@ -5,14 +5,14 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: auto;
+    margin: 0;
 }
-
 
 .title {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-align: center;
-    background-image: url("../img/banner.jpg");
+    background-image: url("./img/banner.jpg");
     background-size: cover;
     height: 60vh;
     width: 100%;
@@ -25,32 +25,27 @@ body {
 }
 
 .container {
-    justify-content: space-between;
     height: 80px;
-}
-
-nav ul {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    justify-content: space-evenly; 
     display: flex;
-    line-height: 25px;
-    size: 450px;
-}
-li {
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;    
 }
 
-a {
+.child {
+    margin: auto;
+    line-height: 25px;
+    width: 15%;
+    display: inline-block;
+    flex-direction: row;
+    padding-top: 15px;
     text-decoration: none;
     color: white;
+    text-align: center;
+    flex: 1;
 }
 
 h2 {
-    text-align: center;;
+    text-align: center;
 }
 
 .flex-container {
@@ -60,6 +55,7 @@ h2 {
     padding-left: 40px;
     padding-right: 40px;
     width: 80%;
+    margin: auto;
 }
 
 .flex-left {
@@ -70,7 +66,8 @@ h2 {
     justify-content: space-between;
     width: 40%;
     float: left;
-    overflow-y: visible;
+    overflow: auto;
+    margin: auto;
 }
 
 .flex-right {
@@ -81,7 +78,8 @@ h2 {
     justify-content: space-between;
     width: 40%;
     float: right;
-    overflow-y: visible;
+    overflow: auto;
+    margin: auto;
 }
 
 #testimonial {

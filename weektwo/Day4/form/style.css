@@ -1,0 +1,41 @@
+body {
+    background-color: #a2d2ff;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+h1 {
+    color: #ea398b;
+}
+
+label {
+    font-size: 20px;
+}
+
+.owner {
+    display: inline-block;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.pet {
+    display: inline-block;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #f3f3f3;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(86, 86, 86);
+}
+
+.btn {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: #ea398b;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(86, 86, 86);
+}

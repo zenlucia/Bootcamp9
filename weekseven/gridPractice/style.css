@@ -34,10 +34,18 @@ body {
     transform: scale(1.1);
 }
 
+
+@media only screen and (m-width: 600px) {
+    .grid-item {
+        filter: invert(100%);
+    }
+}
+
 @media only screen and (min-width: 900px) {
   b {
     background-color: rgb(246, 157, 12);
   }
 }
+
 
 
