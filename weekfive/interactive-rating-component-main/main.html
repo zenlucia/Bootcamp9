@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardOne</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="outerCard" id="outerCard">
+        <div class="starLogo">
+        <img src="images\icon-star.svg" alt="">
+        </div>
+        <div class="text">
+            <h3>How did we do?</h3>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <!--may need to turn this into a form-->
+        <div class="radioButtons"   id="radioButtons">
+            <input name="btn" id="option1" value="1" type="radio">
+            <label for="1"></label>
+            <input name="btn" id="option2" value="2" type="radio">
+            <label for="2"></label>
+            <input name="btn" id="option3" value="3" type="radio">
+            <label for="3"></label>
+            <input name="btn" id="option4" value="4" type="radio">
+            <label for="4"></label>
+            <input name="btn" id="option5" value="5"  type="radio" checked>
+            <label for="5"></label>
+        </div>
+        <div class="submit">
+            <button id="submitButton"   type="button">Submit</button>
+        </div>
+    </div> 
+ <div id="result"></div>  
+</body>
+</html>

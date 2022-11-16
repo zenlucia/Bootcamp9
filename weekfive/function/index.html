@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <div class="demo"></div>
+    <script>
+        /*
+        function printName() {
+            //code for this function goes here
+            alert("Hello");
+            console.log("This is from the printName function");
+            document.getElementsByTagName("body")[0].style.backgroundColor="red";
+        }
+        //before you CALL the function it won't do anything
+        printName();
+
+        //print a name to a div on the page
+            function printName() {
+            const element=document.getElementsByClassName("demo")[0];
+            console.log(element);
+            let firstName="Alex";
+            element.innerHTML="firstName";
+            const p1=document.createElement("p");
+            const p2=document.createElement("p");
+            p1.innerHTML=firstName;
+            p2.innerHTML="second name";
+            element.appendChild(p1);
+            element.appendChild(p2);
+
+            const printName=function(){alert("Function expression")}
+        */
+       //function expression
+        isSunny();
+           const isSunny=function(){alert("Let's go for a walk")};
+        
+           const myArrowFunction=(x)=>{
+            if (x==1) {
+                return true;
+            } else {
+                return false;
+            }
+           }
+        //arrow function
+        const myArrowFunction=()=>{
+            return "my name is xyz"
+        }
+        const element=document.getElementsByClassName("demo")[0];
+        element.innerHTML=myArrowFunction();
+        */
+
+        const body=document.getElementsByTagName("body")[0];
+        console.log(body);
+        body.addEventListener("scroll",callback)=>{console.log("scrolled");}
+
+        
+    </script>
+</body>
+</html>

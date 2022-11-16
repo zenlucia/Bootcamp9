@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../CFG"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "function"
+	}
+}
